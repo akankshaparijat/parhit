@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARHIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo8.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="ngo.html">ORGANISATIONS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+           <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+    <h1>About us</h1>
+        </section>
+        
+        
+        <!-------------------------------------about us content--------------------------------------->
+        <section class="about-us">
+
+            <div class="row">
+                <div class="about-col2">
+                    <h1>A small help by an INDIAN for an INDIAN</h1>
+                    <p>Parhit is a platform where we intend to help the people who belongs to underprivileged sections of society especially in
+                        India. The vision behind launching Parhit is to make it easier, equitable and accessible for everyone to come and help those who
+                        are in need. With the help of this website, it would be easier for different NGOs and rehabilitation centers to access the details and
+                        location of beggars, child laborers and other underprivileged people across India.<br>Anyone with a smartphone in hand can help the one in need while using this website. All you need to do is to visit the website and fill in a form which intends to take the users' information, their location
+                        and/or a photograph of the one they want to help. After that you just need to submit the form and automatically the information about the one in need will be accessed by
+                        all the nearby NGOs and rehabilitation centers.<br><br><strong>"Change will not come if we wait for some other time or some other person.We ourselves can bring the change that we have been waiting for."</strong></p>
+                        <a href="https://forms.gle/AkF6yUQMdErSWSTM9" class="hero-btn red-btn">Fill the form now!</a>
+
+                </div>
+                <div class="about-col2">
+                
+                    <img src="images/about5.jpg" alt="">
+
+                </div>
+            </div>
+        </section>
+        
+<!-----------------------------------Footer----------------------------------->
+
+<section class="footer">
+    <h7>About Us</h7><br>
+    <p3>PARHIT is an initiative for bringing an evolution in the life of poor and needy people.<br>It is founded and operated by Akanksha Parijat.</p3>
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100093995342280"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/be_a_parhit"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/akanksha-parijat-2a7a6620b/"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p3>Made with <i class="fa fa-heart-o"></i> by a PARHIT</p3>
+</section>
+
+
+<!-------JavaScript for Toggle Menu------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
