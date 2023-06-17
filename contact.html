@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARHIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo8.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="ngo.html">ORGANISATIONS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+           <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+        </section>
+
+    <!-------------------------------------Contact us content-------------------------------------->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1IbvEinVdbpV6NjUf54T7u_Rvni0&hl=en_US&ehbc=2E312F" width="600" height="450"></iframe>
+    </section>
+
+    <section class="contact-us">
+<div class="row">
+    <div class="contact-col">
+        <div>
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>Non-Government Organisations</h5>
+                <p>Delhi, India</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+91-9310836388</h5>
+                <p>24x7</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5>beaparhit@gmail.com</h5>
+                <p>Email us your query</p>
+            </span>
+        </div>
+    </div>
+    <div class="contact-col">
+        
+        <form action="https://formspree.io/f/xlekqwnj" method="POST">
+          <label>
+            Enter your name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Enter your contact number
+            <input type="tel" name="phone" required>
+          </label>
+          <label>
+            Enter your email
+            <input type="email" name="email">
+          </label>
+          <label>
+            Enter your message
+            <textarea name="message" required></textarea>
+          </label>
+          <button type="submit" class="hero-btn2">Send Message</button>
+        </form>
+    </div>
+</div>
+
+   </section>
+
+
+<!-----------------------------------Footer----------------------------------->
+
+<section class="footer">
+    <h7>About Us</h7><br>
+    <p3>PARHIT ia an initiative for bringing an evolution in the life of poor and needy people.<br>It is founded and operated by Akanksha Parijat.</p3>
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100093995342280"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/be_a_parhit"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/akanksha-parijat-2a7a6620b/"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p3>Made with <i class="fa fa-heart-o"></i> by a PARHIT</p3>
+</section>
+
+
+
+
+
+<!-------------------------JavaScript for Toggle Menu----------------------->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
